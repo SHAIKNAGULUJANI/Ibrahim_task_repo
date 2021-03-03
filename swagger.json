@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "IBRAHIM-TASK-REPO",
+        "description": "MAKE A SIMPLE GET API",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Ibrahim Task",
+            "description": "Simple Get function"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/personDetails": {
+            "get": {
+                "summary": "To Get user information",
+                "responses": {
+                    "200": {
+                        "description": "User Details Fetched"
+                    }
+                }
+            }
+        }
+    }
+}
